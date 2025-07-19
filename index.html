@@ -14,45 +14,33 @@
     <title>My weather application</title>
   </head>
   <body>
-    <div class="weather-app">
-      <header>
+    <div class="contianer">
+    <header>
         <form id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            required
-            class="search-input"
-            id="search-input"
-          />
-          <input type="submit" value="Search" class="search-button" />
+            <input type="text" class="search-input" id="search-input" placeholder="Eneter a city...." required>
+            <input type="submit" value="search" class="search-button">
         </form>
-      </header>
-      <main>
-        <div class="current-weather">
-          <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
-            <p class="current-details">
-              <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-            </p>
-          </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
-            ><span class="current-temperature-value" id="current-temperature"
-              >24</span
-            ><span class="current-temperature-unit">°C</span>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <p>
-          This project was coded by
-          <a href="#" target="_blank">Your name</a> and is
-          <a href="#" target="_blank"> on GitHub</a> and
-          <a href="#" target="_blank">hosted on Netlify</a>
-        </p>
-      </footer>
+    </header>
+   <main class="main">
+    <div class="text">
+    <h1 id="city">Adiss Abeba</h1>
+    <p>
+        it's 11:20pm,scattered clouds
+        <br>
+        Humidity:<strong class="strong">66%</strong>,Wind:<strong class="strong">1.13 km/h</strong>
+    </p>
     </div>
+    <section class="tempreature">
+    <span class="weather-icon">
+        🌧️
+        </span>
+    <span class="weather-temp">2°C</span>
+    </section>
+   </main>
+   <footer>
+        This is worked by <a href="">Samrawit</a> ,is <a href="">open sourced on Github</a> and hosted with <a href="">netlify</a>
+    </footer>
+    </div>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
-</html>
+  </html>
