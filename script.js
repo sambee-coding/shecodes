@@ -17,6 +17,8 @@ function showweather(response){
       console.log(response.data.wind.speed);
       let windElement=document.querySelector("#wind");
       windElement.innerHTML= `${Math.round(response.data.wind.speed)}km/h `;
+         let iconImage=document.querySelector("#icon");
+  iconImage.innerHTML= `<img src="${response.data.condition.icon_url}" class="weather-icon"/> `;
 
       //fetching time
       let data=new Date (response.data.time*1000);
@@ -40,10 +42,10 @@ function showweather(response){
 
 
 }
-
+   
 function cityweather(city){
-    apiKey="b2a5adcct04b33178913oc335f405433";
-    let apiUrl =  ` https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric `;
+    apiKey="2faae9d4e47d0b0a09a9to05afdf381d";
+    let apiUrl =  `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric `;
     axios.get(apiUrl).then(showweather);
 }
 
