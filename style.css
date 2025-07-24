@@ -3,8 +3,9 @@
     margin: 30px auto;
     border-radius:16px ;
     width: 800px;
-    box-shadow: 0 0 10px regba(65,50,100,0.08);
+    box-shadow: 0 0 10px rgba(65,50,100,0.08);
     padding: 30px;
+    
     
 
 }
@@ -44,10 +45,10 @@ footer{
     padding: 30px 0 0 0 ;
     text-align: center;
     color: rgba (0,0,0,0.5);
-
 }
+
 .main{
-    display: flex;
+   display: flex;
     justify-content: space-between;
     font-weight: bold;
 }
@@ -70,48 +71,24 @@ footer{
 .text p .strong{
     color:#FC709B;
 }
-.weather-forcast{
+.tempreature{
     display: flex;
-    justify-content:space-between;
-    margin-top: 200px;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: #E15598;
-    gap: 20px;
-   
+    justify-content: space-between;
+    align-items: center;
 }
-
-
-.weather-forcast-date{
+.weather-forecast-date{
     text-align: center;
-    color:rgba(39,33,66,0.4);
+    color:rgba(39,33,66,0.4) ;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 10px;
-
 }
-
-.weather-forcast-icon{
+.weather-forecast-icon{
     font-size: 38px;
     text-align: center;
-
 }
-.weather-forcast-temp{
+.weather-forecast-temp{
     text-align: center;
-   color:#FC709B;
-   display: flex;
-   justify-content: center;
-   margin-top: 10px;
-}
-.weather-forcast-temperature{
-    padding: 0 10px;
-}
-*/
-.tempreature {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* spacing between items */
-}
-.wether-forcast-day{
-    margin-left: 0;
+    color: #E15598;
+    display: flex;
 }
