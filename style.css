@@ -2,7 +2,7 @@
     background-color: white;
     margin: 30px auto;
     border-radius:16px ;
-    width: 600px;
+    width: 800px;
     box-shadow: 0 0 10px regba(65,50,100,0.08);
     padding: 30px;
     
@@ -52,7 +52,7 @@ footer{
     font-weight: bold;
 }
 .main .tempreature{
-    padding-top: 28px;
+    padding-top: 5px;
     font-size: 18px;
     color:#E15598;
 }
@@ -68,16 +68,50 @@ footer{
     line-height: 20px;
 }
 .text p .strong{
-    color:#FC709B
+    color:#FC709B;
 }
- section .tempreature{
+.weather-forcast{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content:space-between;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #E15598;
+    gap: 20px;
+   
 }
 
-.tempreature .weather-temp{
-    font-size: 30px;
-    font-weight: bold;
 
+.weather-forcast-date{
+    text-align: center;
+    color:rgba(39,33,66,0.4);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+
+}
+
+.weather-forcast-icon{
+    font-size: 38px;
+    text-align: center;
+
+}
+.weather-forcast-temp{
+    text-align: center;
+   color:#FC709B;
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+.weather-forcast-temperature{
+    padding: 0 10px;
+}
+*/
+.tempreature {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between items */
+}
+.wether-forcast-day{
+    margin-left: 0;
 }
